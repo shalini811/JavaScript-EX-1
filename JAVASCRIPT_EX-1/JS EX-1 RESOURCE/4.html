@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <title>To display the reading status</title>
+ </head>
+ <body>
+     <script>
+     var library = [ 
+   {
+       title: 'Half-girlfriend',
+       author: 'Chetan Bhagat',
+       readingStatus: true
+   },
+   {
+       title: 'Your Dreams are mine now',
+       author: 'Ravinder singh',
+       readingStatus: false
+   },
+   {
+       title: 'My Secret Wishlist',
+       author: 'Preethy Shenoy',
+       readingStatus: true
+   }];
+
+for (var i = 0; i < library.length; i++) 
+  {
+   var book = "'" + library[i].title + "'" + ' by ' + library[i].author + ".";
+   if (library[i].readingStatus) {
+     document.write("Already read " + book +"<br>");
+   } else
+   {
+    document.write("You still need to read " + book +"<br>");
+   }
+  }
+     </script>
+</body>
+ </html>

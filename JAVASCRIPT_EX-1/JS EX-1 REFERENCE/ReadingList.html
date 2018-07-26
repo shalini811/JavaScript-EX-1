@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<body>
+<script>
+var books = [ {title: 'Half-girlfriend', author: 'Chetan Bhagat',
+   alreadyRead: true},
+  {title: 'Your Dreams are mine now', author: 'Ravinder Singh', alreadyRead:false }];
+
+for (var i = 0; i < books.length; i++) {
+  var book = books[i];
+  var bookInfo = book.title + '" by ' + book.author;
+  if (book.alreadyRead) {
+    document.write('You already read "' + bookInfo);
+  } else {
+    document.write('You still need to read "' + bookInfo);
+  }
+}
+</script>
+</body>
+</html>
+

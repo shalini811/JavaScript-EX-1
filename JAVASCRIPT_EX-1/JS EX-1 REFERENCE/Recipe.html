@@ -1,0 +1,21 @@
+<!doctype.html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+ var recipe = {
+     title: 'BlackCoffee', servings: 4, ingredients: ['HotWater', 'SugarCubes', 'CoffeePowder']
+     };
+document.write(recipe.title);
+
+document.write('Servings:' + recipe.servings);
+
+document.write('Ingredients:');
+
+for (var i = 0; i < recipe.ingredients.length; i++)
+ {
+    document.write(recipe.ingredients[i]);
+}
+</script>
+</body>
+</html>
